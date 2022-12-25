@@ -94,9 +94,9 @@
  @media (max-width: 480px) { 
     .brand{
         position: relative;
-        left: -.7rem !important;
+        left: -.8rem !important;
         object-fit: contain;
-        width: 220px !important;
+        width: 200px !important;
         top: .2rem;
     }
     .navLink{
@@ -122,7 +122,7 @@
         object-fit: contain;
         transform: scale(.35);
         right: 0;
-        left: 10rem !important;
+        left: 9.7rem !important;
         top: -.9rem !important;
     
     }
