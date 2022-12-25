@@ -1,0 +1,189 @@
+:root
+{
+  --primary:#417b13;
+  --bg: #ecfbec;
+  --bg2: #c1eed6;
+  --text: #898483;
+  --headers: #1d1d1d;
+  --greenText: #bdcfb9;
+  --bottongreen: #6ea45d;
+  --activeHeader: #565956;
+  --cartTotal: #e46060;
+  --icons: #2e312e;
+  --black: #000;
+  --white: #fff;
+  
+}
+
+.App{
+    padding: 0.5rem 3.5rem;
+    background: var(--bg);    
+   
+}
+
+
+  .button{
+    border-radius: 5px !important;
+    border: none;
+    color: white;
+    padding: 11px 26px 11px 26px !important;
+    background: var(--primary) !important;
+    height: 62px;
+    width: 180px;
+    /* fonts  */
+    font-family: 'Inter', sans-serif ;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    z-index: 100 !important;
+
+
+
+  }
+  .button2 {
+    border-radius: 5px !important;
+    border: 1.5px solid var(--bottongreen) !important;
+    color: var(--bottongreen) !important;
+    font-size: 16px;
+    height: 63px;
+    width: 135px !important;
+    padding: 11px 26px 11px 26px !important;
+    background: transparent !important;
+    z-index: 100;
+
+
+    /* fonts  */
+
+    font-family: 'Inter', sans-serif ;
+    font-size: 16px !important;
+    font-weight: normal !important;
+  }
+  .button3 {
+    border-radius: 5px !important;
+    border: 1.5px solid var(--black) !important;
+    color: var(--white) !important;
+    font-size: 16px;
+    height: 63px;
+    width: 135px !important;
+
+    padding: 11px 26px 11px 26px !important;
+    background: var(--black) !important;
+    box-shadow: none !important;
+
+
+    /* fonts  */
+
+    font-family: 'Inter', sans-serif ;
+    font-size: 16px !important;
+    font-weight: normal !important;
+  }
+  .button:hover{
+    cursor: pointer;
+    background:  var(--primary) !important; 
+    color: var(--white) !important;
+    opacity: .8;
+    /* border: 1px solid var(--orange) */
+  }
+  .button2:hover{
+    cursor: pointer;
+    background:  var(--primary) !important; 
+    color: var(--white) !important;
+    opacity: .8;
+    /* border: 1px solid var(--orange) */
+  }
+  .button3:hover{
+    cursor: pointer;
+    background: transparent !important; 
+    color: var(--black) !important;
+    opacity: .8;
+    /* border: 1px solid var(--orange) */
+    box-shadow: none !important;
+  }
+
+  @media screen and (max-width: 480px) {
+    .App{
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .amount-container {
+    position: absolute;
+    top: 1.3rem;
+    right: -3.4rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--cartTotal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .total-amount {
+    color: var(--white);
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+
+
+  
+ /* Small devices (landscape phones, 576px and up) */
+
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 1400px){
+  
+  .amount-container {
+    position: absolute;
+    top: 1.3rem;
+    right: -1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--cartTotal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .total-amount {
+    color: var(--white);
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+ }
+
+@media (max-width: 768px) { 
+  .amount-container {
+    position: absolute;
+    top: 1.2rem !important;
+    right: -.3rem !important;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--cartTotal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ }
+ @media (max-width: 480px) {
+  .amount-container {
+    position: absolute;
+    top:.7rem !important;
+    right:5.3rem !important;
+    width: 1.2rem !important; 
+    height: 1.2rem !important;
+    border-radius: 50%;
+    background: var(--cartTotal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .total-amount {
+    color: var(--white);
+    margin-bottom: 0;
+    font-size: .8rem !important;
+  }
+
+  }
+ 
+ @media screen and (max-width: 768px){}
+ @media screen and (max-width: 480px){}

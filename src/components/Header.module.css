@@ -1,0 +1,129 @@
+
+.navbar{
+    width: 100%;
+    background: transparent !important;
+    z-index: 100;
+}
+.brand{
+    position: relative;
+    left: -3rem;
+    object-fit: contain;
+    /* transform: scale(.85); */
+    width: 370px;
+}
+.brand:hover{
+    cursor: pointer;
+}
+
+.navLink{
+    color: var(--text) !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    margin-top: -10px !important;
+    text-decoration: none !important;
+    cursor: pointer ;
+    
+}
+.navLink:hover{
+    cursor: pointer !important;
+
+
+}
+.cart{
+    position: absolute;
+    object-fit: contain;
+    transform: scale(.45);
+    right: -4.5rem;
+    top: 0;
+
+}
+.cart:hover{
+    transform: scale(.53);
+    transition: smooth;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1400px){
+    .cart{
+        position: absolute;
+        object-fit: contain;
+        transform: scale(.45);
+        right: -2rem;
+        top: 0;
+    
+    }
+}
+ @media (max-width: 768px) { 
+    .brand{
+        position: relative;
+        left: 0rem;
+        object-fit: cover;
+        width: 370px;
+    }
+    .navLink{
+        color: var(--text) !important;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        margin-top: 10px !important;
+        text-decoration: none !important;
+        cursor: pointer ;
+        
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: space-around !important;
+    }
+    .signup {
+        margin-top: 20px !important;
+    }
+    .cart{
+        position: absolute;
+        object-fit: contain;
+        transform: scale(.4);
+        right: 0;
+        left: 35rem !important;
+        top: 0rem;
+    
+    }
+  
+  }
+
+
+ @media (max-width: 480px) { 
+    .brand{
+        position: relative;
+        left: -.7rem !important;
+        object-fit: contain;
+        width: 220px !important;
+        top: .2rem;
+    }
+    .navLink{
+        color: var(--text) !important;
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        margin-top: 10px !important;
+        text-decoration: none !important;
+        cursor: pointer ;
+        
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+        justify-content: space-around !important;
+    }
+    .signup {
+        margin-top: 20px !important;
+    }
+    .cart{
+        position: absolute;
+        object-fit: contain;
+        transform: scale(.35);
+        right: 0;
+        left: 10rem !important;
+        top: -.9rem !important;
+    
+    }
+  }

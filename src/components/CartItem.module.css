@@ -1,0 +1,134 @@
+.cardcontainer{
+ width: 100%;
+ display: flex;
+ justify-content: center !important;
+ align-items: center !important;
+ text-align: center !important;
+ margin-top: 50px;
+}
+.card{
+    display: flex;
+    background: var(--bg) !important;
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center;
+    height: 120px !important;
+    border: 1px solid var(--primary) !important;
+    border-radius: 10px !important;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+
+}
+.checkbox{
+    fill: var(--primary) !important;
+    box-shadow: none !important;
+    height: 20px !important;
+    width: 20px !important;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+.desc{
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    justify-content: center;
+}
+.amtbtn{
+ 
+height: 24px !important;
+width: 24px !important;
+
+}
+.Cartbtn{
+    margin-top: -10px;
+}
+.value{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right:28px !important;
+    margin-bottom: -15px !important;
+}
+
+.list{
+    background: transparent !important;
+    border: 1px solid var(--primary) !important;
+    height: 40px;
+    width: 240px;
+    justify-content: center !important;
+}
+
+@media screen and (min-width: 1400px){}
+@media screen and (max-width: 768px){
+    .cardcontainer{
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin-top: 50px;
+       }
+       .card{
+           display: flex;
+           background: var(--bg) !important;
+           width: 700px !important;
+           justify-content: center !important;
+           text-align: center;
+           height: 120px !important;
+           border: 1px solid var(--primary) !important;
+           border-radius: 10px !important;
+           padding: 1rem 1.5rem;
+           box-sizing: border-box;
+       
+       }
+       .logo{
+        transform: scale(.6);
+       }
+       .desc{
+        font-size: 1rem;
+        width: 200px;
+        margin-left: -1rem;
+       }
+}
+@media screen and (max-width: 480px){
+    .cardcontainer{
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin-top: 50px;
+       }
+       .card{
+        flex-direction: column;
+        width: 320px !important;
+        height: 300px !important;
+        justify-content: space-between !important;
+       }
+       .checkbox{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+       }
+       .logo{
+        position: absolute;
+        top: -10px;
+        right: 0;
+        transform: scale(.5);
+       }
+       .desc{
+        font-size: 1.5rem;
+        width: 100%;
+        margin-left: 0;
+       }
+       .valueDesc{
+        display: flex;
+        width: 100%;
+        margin: 0 auto !important;
+        justify-content: center;
+        text-align: center !important;
+       }
+}

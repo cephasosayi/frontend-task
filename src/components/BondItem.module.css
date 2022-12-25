@@ -1,0 +1,116 @@
+.card{
+    background: transparent !important;
+    border: 2px solid var(--primary) !important;
+    border-radius: 15px !important;
+    padding: 1rem 1.5rem;
+    width: 355px;
+
+}
+.logo2{
+    width: 3.5rem;
+    height: 100% !important;
+    object-fit: contain;
+}
+.badgeCont{
+    justify-content: center;
+    background: var(--bg2);
+    padding: 4px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 32px;
+   
+}
+.badgeCont :first-child{
+    font-size: 14px;
+    text-align: center !important;
+    margin-top: 0 auto;
+    font-weight: 500;
+    color: var(--text);
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.desc >p{
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 400;
+}
+.desc > h2{
+    font-size: 26px;
+}
+.table > td{
+    color: var(--black) ;
+    font-weight: 500 !important;
+    font-style: normal;
+}
+.muted{
+    color: var(--text) !important;
+}
+.fav{
+    transform: scale(.8);
+    object-fit: contain;
+}
+.fav:hover{
+    cursor: pointer;
+    fill: red;
+    transform: scale(1);
+}
+
+@media screen and (min-width: 1400px){}
+@media screen and (max-width: 768px){
+    .card{
+        background: transparent !important;
+        border: 2px solid var(--primary) !important;
+        border-radius: 15px !important;
+        padding: 1rem 1.5rem;
+        width: 310px;
+    
+    }
+   
+    .desc{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .desc >p{
+        color: var(--text);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .desc > h2{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 480px){
+    .card{
+        background: transparent !important;
+        border: 2px solid var(--primary) !important;
+        border-radius: 15px !important;
+        padding: 1rem 1.5rem;
+        width: 300px;
+    
+    }
+   
+    .desc{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .desc >p{
+        color: var(--text);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .desc > h2{
+        font-size: 22px;
+    }
+}
