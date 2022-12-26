@@ -8,6 +8,7 @@ import Cart from "./components/Cart";
 import Signup from "./components/Signup";
 import { useSelector, useDispatch } from 'react-redux';
 import { calculateTotals } from "./features/cart/cartSlice";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const { cartItems } = useSelector((state) => state.cart);

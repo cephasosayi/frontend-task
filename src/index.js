@@ -6,9 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { store } from './app/store';
 import { Provider } from 'react-redux'
 import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
-import BondOffer from "./components/BondOffer";
-import Cart from "./components/Cart";
-import Signup from "./components/Signup";
+import "react-toastify/dist/ReactToastify.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 

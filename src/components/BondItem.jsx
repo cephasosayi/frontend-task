@@ -3,11 +3,47 @@ import CardStyles from './BondItem.module.css';
 import { Button, Card, CardGroup, Container,Col, ListGroup, Row, Table } from 'react-bootstrap';
 import logo2 from '../assets/imgs/logo2.png';
 import favourite from '../assets/imgs/favourite.png';
+import {  useDispatch } from 'react-redux';
+import { increase} from '../features/cart/cartSlice';
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 
-const BondItem = ({id,title,name,minimum,percentage_per_year,interest_payment,opening,closing_date,settlemen,due_date}) => {
+
+const BondItem = ({ id, title, name, minimum, percentage_per_year, interest_payment, opening, closing_date, settlemen, due_date }) => {
+  const dispatch = useDispatch();
+
+  const notify = () => {
+
+
+    toast.success('Added to cart', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  }
+  const handleClick = () => {
+    dispatch(increase({ id }));
+    notify();
+ }
   return (<Container > 
-    {/* <Row lg={4}> */}
-      {/* <Col> */}
+    <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+/>
+<ToastContainer />
       <Card className={`${CardStyles.card}`}>
         {/* top  */}
         <div className='d-flex flex-row justify-content-between'>
@@ -59,13 +95,12 @@ const BondItem = ({id,title,name,minimum,percentage_per_year,interest_payment,op
           </Table>
           {/* footer  */}
           <div className='d-flex justify-content-center'>
-          <Button variant='success' className='button me-3'>Add to Cart </Button>
+          <Button variant='success' className='button me-3'
+            onClick={() => handleClick()}>Add to Cart </Button>
           <img src={favourite } alt='favourite' className={`${CardStyles.fav}`} />
           </div>
         </div>
         </Card> 
-        {/* </Col> */}
-      {/* // </Row> */}
     </Container>
   )
 }

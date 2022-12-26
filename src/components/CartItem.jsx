@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import { Col, Container, Row , Card, Image, Button, ListGroup} from 'react-bootstrap';
 import FormCheckInput from 'react-bootstrap/esm/FormCheckInput';
 import CartStyles from './CartItem.module.css';
@@ -11,7 +11,6 @@ import remove from '../assets/imgs/remove.png'
 
 const CartItem = ({ value, amount, id, img, name, }) => {
   const dispatch = useDispatch();
-  const [count, setCount] = useState(0);
 
   return (
     <Container fluid>
@@ -82,7 +81,7 @@ const CartItem = ({ value, amount, id, img, name, }) => {
                   <p className='text-center fw-medium '>{amount} </p>
                 <Button
                   className={`${CartStyles.Cartbtn} `}
-                      variant='outline'onClick={() => { dispatch(increase({ id })) }}> <img
+                      variant='outline' onClick={() => { dispatch(increase({ id })) }}> <img
                   src={add} alt=' '
                   className={`${CartStyles.amtbtn}`} /> </Button>
 
