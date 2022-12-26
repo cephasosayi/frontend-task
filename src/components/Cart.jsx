@@ -40,7 +40,7 @@ const Cart = () => {
           <p className={`${CartStyles.totaldesc}`}>This is 730 days savings bonds, you have  fixed income</p>
         </div>
       </div>
-      <div className='d-flex flex-column ms-auto'>
+      <div className={`${CartStyles.buycont} d-flex flex-column ms-auto`}>
         <p className='ms-5'>Total Buy </p> 
         <h4 className='me-4 mt-0 p-0 m-0 '>&#8358;{total.toFixed(2)} </h4> 
       </div>
