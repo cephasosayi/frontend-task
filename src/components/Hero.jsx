@@ -23,7 +23,7 @@ const Hero = () => {
                           </Button>
                     </Link>
                       <Button className={`${HeroStyles.playbtn}`} variant='success' >
-                          <Image src={play} alt='play' className={`${HeroStyles.playicon} me-2 ms-3 `} /> See Video
+                          <Image src={play} alt='play' className={`${HeroStyles.playicon} me-1 ms-3 `} /> See Video
                       </Button>
                   </ButtonGroup>
                   
