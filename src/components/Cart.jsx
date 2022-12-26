@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Row, Card, Button } from 'react-bootstrap';
+import { Container, Row, Card, Button, Nav } from 'react-bootstrap';
 import CartStyles from './Cart.module.css';
 import CartItem from './CartItem';
 import { Link } from 'react-router-dom';
@@ -15,10 +15,10 @@ const Cart = () => {
             <header className='d-flex flex-column mt-5 me-auto ms-auto'>
                 <h2 className='text-center'>Your Cart</h2>
                 <h4 className='text-center'>is currently empty</h4>
-          <Link to='/bond_offer'>
-            <p className={`${CartStyles.back}`}>
-              <img src={left} alt='' /> Back to Shop </p>
-          </Link>
+         
+          <Nav.Link as={Link} to='/bond_offer' className={`${CartStyles.back} mt-5`}>
+              <img src={left} alt='' /> Back to Shop </Nav.Link>
+    
             </header>
         </section>
     )
