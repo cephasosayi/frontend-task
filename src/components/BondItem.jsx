@@ -17,7 +17,7 @@ const BondItem = ({ id, title, name, minimum, percentage_per_year, interest_paym
 
     toast.success('Added to cart', {
       position: "top-right",
-      autoClose: 5000,
+      autoClose: 500,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -31,19 +31,8 @@ const BondItem = ({ id, title, name, minimum, percentage_per_year, interest_paym
     notify();
  }
   return (<Container > 
-    <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-/>
-<ToastContainer />
+  
+<ToastContainer className='mt-5 w-xs-75 w-sm-75' />
       <Card className={`${CardStyles.card}`}>
         {/* top  */}
         <div className='d-flex flex-row justify-content-between'>
