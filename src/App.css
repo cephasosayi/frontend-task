@@ -183,6 +183,65 @@
     font-size: .8rem !important;
   }
 
+  
+  .button{
+    border-radius: 5px !important;
+    border: none;
+    color: white;
+    padding: 11px 26px 11px 26px !important;
+    background: var(--primary) !important;
+    height: 58px;
+    width: 170px;
+    /* fonts  */
+    font-family: 'Inter', sans-serif ;
+    font-size: 1rem !important;
+    font-weight: bold !important;
+    z-index: 100 !important;
+
+
+
+  }
+  .button2 {
+    border-radius: 5px !important;
+    border: 1.5px solid var(--bottongreen) !important;
+    color: var(--bottongreen) !important;
+    font-size: 16px;
+    height: 58px;
+    width: 170px;
+    /* fonts  */
+    font-family: 'Inter', sans-serif ;
+    font-size: 1rem !important;
+    padding: 11px 26px 11px 26px !important;
+    background: transparent !important;
+    z-index: 100;
+
+
+    /* fonts  */
+
+    font-family: 'Inter', sans-serif ;
+    font-weight: normal !important;
+  }
+  .button3 {
+    border-radius: 5px !important;
+    border: 1.5px solid var(--black) !important;
+    color: var(--white) !important;
+    font-size: 16px;
+    height: 58px;
+    width: 170px;
+    /* fonts  */
+    font-family: 'Inter', sans-serif ;
+    font-size: 1rem !important;
+
+    padding: 11px 26px 11px 26px !important;
+    background: var(--black) !important;
+    box-shadow: none !important;
+
+
+    /* fonts  */
+
+    font-family: 'Inter', sans-serif ;
+    font-weight: normal !important;
+  }
   }
  
  @media screen and (max-width: 768px){}

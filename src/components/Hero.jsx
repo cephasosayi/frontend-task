@@ -16,10 +16,10 @@ const Hero = () => {
                   <h1 className={`${HeroStyles.headerText}`}>Subscribe to FGN Saving Bond</h1>
                   <p className={`${HeroStyles.desc}`}>Loan and get paid with interest</p>
 
-                  <ButtonGroup className={`${HeroStyles.herobtngroup} gap-3`}>
+                  <ButtonGroup className={`${HeroStyles.herobtngroup} gap-lg-3`}>
                       <Link to='/bond_offer'>
                           <Button className='button' variant='success' >Get Started
-                          <Image src={right} alt='' className={`${HeroStyles.righticon} ms-2`} />
+                          <Image src={right} alt='' className={`${HeroStyles.righticon} ms-lg-2`} />
                           </Button>
                     </Link>
                       <Button className={`${HeroStyles.playbtn}`} variant='success' >
