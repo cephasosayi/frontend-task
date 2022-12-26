@@ -22,7 +22,7 @@ const CartItem = ({ value, amount, id, img, name, }) => {
             {/* check box  */}
             <div className='justify-content-center mt-auto mb-auto'>
               
-              <FormCheckInput  className={`${CartStyles.customcheckbox }  btn-success`} />
+              <FormCheckInput  className={`${CartStyles.checkbox }  btn-success`} />
             </div>
             {/* logo  */}
             <div  className='justify-content-center mt-auto mb-auto'>
