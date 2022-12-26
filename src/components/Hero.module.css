@@ -147,9 +147,7 @@
         background-size: 35rem !important;
         background-position-x: 7rem !important;
         background-position-y: 10rem !important;
-        width: 100vw !important;
-        height: 100vh;
-        overflow-block: hidden;
+        width: 360px !important;
     
     }
     .headerText{
